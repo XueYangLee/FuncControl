@@ -4,7 +4,7 @@
 #### 导入方式
 + pods导入
 ```
-pod 'FuncChains'
+pod 'FuncControl'
 ```
 + 手动导入
 
