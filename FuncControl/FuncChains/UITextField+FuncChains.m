@@ -17,42 +17,42 @@
 
 - (UITextField * _Nonnull (^)(CGRect))func_frame{
     return ^id(CGRect frame){
-        self.frame=frame;
+        self.frame = frame;
         return self;
     };
 }
 
 - (UITextField * _Nonnull (^)(UIColor * _Nonnull))func_backgroundColor{
     return ^id(UIColor *backgroundColor){
-        self.backgroundColor=backgroundColor;
+        self.backgroundColor = backgroundColor;
         return self;
     };
 }
 
 - (UITextField * _Nonnull (^)(NSString * _Nonnull))func_text{
     return ^id(NSString *text){
-        self.text=text;
+        self.text = text;
         return self;
     };
 }
 
 - (UITextField * _Nonnull (^)(UIColor * _Nonnull))func_textColor{
     return ^id(UIColor *textColor){
-        self.textColor=textColor;
+        self.textColor = textColor;
         return self;
     };
 }
 
 - (UITextField * _Nonnull (^)(UIFont * _Nonnull))func_font{
     return ^id(UIFont *font){
-        self.font=font;
+        self.font = font;
         return self;
     };
 }
 
 - (UITextField * _Nonnull (^)(NSString * _Nonnull))func_placeholder{
     return ^id(NSString *placeholder){
-        self.placeholder=placeholder;
+        self.placeholder = placeholder;
         return self;
     };
 }
@@ -60,7 +60,7 @@
 - (UITextField * _Nonnull (^)(UIColor * _Nonnull))func_placeholderColor{
     return ^id(UIColor *placeholderColor){
         if (@available(iOS 11.0, *)) {
-            self.attributedPlaceholder=[[NSAttributedString alloc]initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName:placeholderColor}];
+            self.attributedPlaceholder = [[NSAttributedString alloc]initWithString:self.placeholder attributes:@{NSForegroundColorAttributeName:placeholderColor}];
         }else{
             [self setValue:placeholderColor forKeyPath:@"_placeholderLabel.textColor"];
         }
@@ -71,7 +71,7 @@
 - (UITextField * _Nonnull (^)(UIFont * _Nonnull))func_placeholderFont{
     return ^id(UIFont *placeholderFont){
         if (@available(iOS 11.0, *)) {
-            self.attributedPlaceholder=[[NSAttributedString alloc]initWithString:self.placeholder attributes:@{NSFontAttributeName:placeholderFont}];
+            self.attributedPlaceholder = [[NSAttributedString alloc]initWithString:self.placeholder attributes:@{NSFontAttributeName:placeholderFont}];
         }else{
             [self setValue:placeholderFont forKeyPath:@"_placeholderLabel.font"];
         }
@@ -81,56 +81,49 @@
 
 - (UITextField * _Nonnull (^)(NSTextAlignment))func_textAlignment{
     return ^id(NSTextAlignment textAlignmen){
-        self.textAlignment=textAlignmen;
+        self.textAlignment = textAlignmen;
         return self;
     };
 }
 
 - (UITextField * _Nonnull (^)(UIColor * _Nonnull))func_tintColor{
     return ^id(UIColor *tintColor){
-        self.tintColor=tintColor;
-        return self;
-    };
-}
-
-- (UITextField * _Nonnull (^)(BOOL))func_enable{
-    return ^id(BOOL enable){
-        self.enabled=enable;
+        self.tintColor = tintColor;
         return self;
     };
 }
 
 - (UITextField * _Nonnull (^)(BOOL))func_secureTextEntry{
     return ^id(BOOL secureTextEntry){
-        self.secureTextEntry=secureTextEntry;
+        self.secureTextEntry = secureTextEntry;
         return self;
     };
 }
 
 - (UITextField * _Nonnull (^)(UITextBorderStyle))func_borderStyle{
     return ^id(UITextBorderStyle borderStyle){
-        self.borderStyle=borderStyle;
+        self.borderStyle = borderStyle;
         return self;
     };
 }
 
 - (UITextField * _Nonnull (^)(UITextFieldViewMode))func_clearButtonMode{
     return ^id(UITextFieldViewMode clearButtonMode){
-        self.clearButtonMode=clearButtonMode;
+        self.clearButtonMode = clearButtonMode;
         return self;
     };
 }
 
 - (UITextField * _Nonnull (^)(UIReturnKeyType))func_returnKeyType{
     return ^id(UIReturnKeyType returnKeyTyp){
-        self.returnKeyType=returnKeyTyp;
+        self.returnKeyType = returnKeyTyp;
         return self;
     };
 }
 
 - (UITextField * _Nonnull (^)(UIKeyboardType))func_keyboardType{
     return ^id(UIKeyboardType keyboardType){
-        self.keyboardType=keyboardType;
+        self.keyboardType = keyboardType;
         return self;
     };
 }
@@ -141,6 +134,35 @@
         return self;
     };
 }
+
+- (UITextField * _Nonnull (^)(BOOL))func_enable{
+    return ^id(BOOL enable){
+        self.enabled = enable;
+        return self;
+    };
+}
+
+- (UITextField * _Nonnull (^)(BOOL))func_userInteractionEnabled{
+    return ^id(BOOL userInteractionEnabled){
+        self.userInteractionEnabled = userInteractionEnabled;
+        return self;
+    };
+}
+
+- (UITextField * _Nonnull (^)(CGFloat))func_alpha{
+    return ^id(CGFloat alpha){
+        self.alpha = alpha;
+        return self;
+    };
+}
+
+- (UITextField * _Nonnull (^)(BOOL))func_hidden{
+    return ^id(BOOL hidden){
+        self.hidden = hidden;
+        return self;
+    };
+}
+
 
 
 @end

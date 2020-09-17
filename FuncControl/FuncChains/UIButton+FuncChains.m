@@ -16,14 +16,14 @@
 
 - (UIButton * _Nonnull (^)(CGRect))func_frame{
     return ^id(CGRect frame){
-        self.frame=frame;
+        self.frame = frame;
         return self;
     };
 }
 
 - (UIButton * _Nonnull (^)(UIFont * _Nonnull))func_font{
     return ^id(UIFont *font){
-        self.titleLabel.font=font;
+        self.titleLabel.font = font;
         return self;
     };
 }
@@ -79,21 +79,28 @@
 
 - (UIButton * _Nonnull (^)(UIControlContentVerticalAlignment))func_contentVerticalAlignment{
     return ^id(UIControlContentVerticalAlignment contentVerticalAlignment){
-        self.contentVerticalAlignment=contentVerticalAlignment;
+        self.contentVerticalAlignment = contentVerticalAlignment;
         return self;
     };
 }
 
 - (UIButton * _Nonnull (^)(UIControlContentHorizontalAlignment))func_contentHorizontalAlignment{
     return ^id(UIControlContentHorizontalAlignment contentHorizontalAlignment){
-        self.contentHorizontalAlignment=contentHorizontalAlignment;
+        self.contentHorizontalAlignment = contentHorizontalAlignment;
         return self;
     };
 }
 
 - (UIButton * _Nonnull (^)(UIColor * _Nonnull))func_backgroundColor{
     return ^id(UIColor *backgroundColor){
-        self.backgroundColor=backgroundColor;
+        self.backgroundColor = backgroundColor;
+        return self;
+    };
+}
+
+- (UIButton * _Nonnull (^)(UIImage * _Nonnull, UIControlState))func_backgroundImage{
+    return ^id(UIImage *backgroundImage,UIControlState state){
+        [self setBackgroundImage:backgroundImage forState:state];
         return self;
     };
 }
@@ -101,6 +108,34 @@
 - (UIButton * _Nonnull (^)(id _Nonnull, SEL _Nonnull))func_addTarget_action{
     return ^id(id target,SEL action){
         [self addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+        return self;
+    };
+}
+
+- (UIButton * _Nonnull (^)(BOOL))func_enabled{
+    return ^id(BOOL enabled){
+        self.enabled = enabled;
+        return self;
+    };
+}
+
+- (UIButton * _Nonnull (^)(BOOL))func_userInteractionEnabled{
+    return ^id(BOOL userInteractionEnabled){
+        self.userInteractionEnabled = userInteractionEnabled;
+        return self;
+    };
+}
+
+- (UIButton * _Nonnull (^)(CGFloat))func_alpha{
+    return ^id(CGFloat alpha){
+        self.alpha = alpha;
+        return self;
+    };
+}
+
+- (UIButton * _Nonnull (^)(BOOL))func_hidden{
+    return ^id(BOOL hidden){
+        self.hidden = hidden;
         return self;
     };
 }

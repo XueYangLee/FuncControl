@@ -46,9 +46,6 @@ NS_ASSUME_NONNULL_BEGIN
 /** 光标颜色 */
 - (UITextField * (^)(UIColor *tintColor))func_tintColor;
 
-/** 输入框能否编辑 */
-- (UITextField * (^)(BOOL enable))func_enable;
-
 /** 编辑框中的内容密码显示 */
 - (UITextField * (^)(BOOL secureTextEntry))func_secureTextEntry;
 
@@ -66,6 +63,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** 操作事件 (target,action,controlEvents) */
 - (UITextField * (^)(id target,SEL action,UIControlEvents controlEvents))func_addTarget_action_events;
+
+/** 输入框能否编辑 */
+- (UITextField * (^)(BOOL enable))func_enable;
+
+/** 是否响应用户操作 */
+- (UITextField * (^)(BOOL userInteractionEnabled))func_userInteractionEnabled;
+
+/** 控件透明度 */
+- (UITextField * (^)(CGFloat alpha))func_alpha;
+
+/** 是否隐藏控件 */
+- (UITextField * (^)(BOOL hidden))func_hidden;
 
 
 

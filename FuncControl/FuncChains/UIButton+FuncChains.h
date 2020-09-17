@@ -51,8 +51,23 @@ NS_ASSUME_NONNULL_BEGIN
 /** 背景色 */
 - (UIButton * (^)(UIColor *backgroundColor))func_backgroundColor;
 
+/** 背景图片 */
+- (UIButton * (^)(UIImage *backgroundImage,UIControlState state))func_backgroundImage;
+
 /** 按钮点击触发对象及点击事件 (target,action) */
 - (UIButton * (^)(id target,SEL action))func_addTarget_action;
+
+/** 是否可用 */
+- (UIButton * (^)(BOOL enabled))func_enabled;
+
+/** 是否响应用户操作 */
+- (UIButton * (^)(BOOL userInteractionEnabled))func_userInteractionEnabled;
+
+/** 控件透明度 */
+- (UIButton * (^)(CGFloat alpha))func_alpha;
+
+/** 是否隐藏控件 */
+- (UIButton * (^)(BOOL hidden))func_hidden;
 
 
 

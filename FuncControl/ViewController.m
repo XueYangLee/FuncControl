@@ -7,9 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "UIButton+FuncChains.h"
-#import "UILabel+FuncChains.h"
-#import "UITextField+FuncChains.h"
+#import "FuncChains.h"
 
 @interface ViewController ()
 

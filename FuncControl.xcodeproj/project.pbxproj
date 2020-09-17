@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0456A5442513411F009B6C73 /* UIImageView+FuncChains.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456A5432513411F009B6C73 /* UIImageView+FuncChains.m */; };
+		0456A547251349A4009B6C73 /* UIView+FuncChains.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456A546251349A4009B6C73 /* UIView+FuncChains.m */; };
 		3D4BD18123B5EA1C0048F46C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BD18023B5EA1C0048F46C /* AppDelegate.m */; };
 		3D4BD18423B5EA1C0048F46C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BD18323B5EA1C0048F46C /* SceneDelegate.m */; };
 		3D4BD18723B5EA1C0048F46C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BD18623B5EA1C0048F46C /* ViewController.m */; };
@@ -20,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0456A5422513411F009B6C73 /* UIImageView+FuncChains.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FuncChains.h"; sourceTree = "<group>"; };
+		0456A5432513411F009B6C73 /* UIImageView+FuncChains.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FuncChains.m"; sourceTree = "<group>"; };
+		0456A545251349A4009B6C73 /* UIView+FuncChains.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FuncChains.h"; sourceTree = "<group>"; };
+		0456A546251349A4009B6C73 /* UIView+FuncChains.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FuncChains.m"; sourceTree = "<group>"; };
+		0456A54825134D37009B6C73 /* FuncChains.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FuncChains.h; sourceTree = "<group>"; };
 		3D4BD17C23B5EA1C0048F46C /* FuncControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuncControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4BD17F23B5EA1C0048F46C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3D4BD18023B5EA1C0048F46C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,12 +96,17 @@
 		3D4BD19823B5ED430048F46C /* FuncChains */ = {
 			isa = PBXGroup;
 			children = (
+				0456A54825134D37009B6C73 /* FuncChains.h */,
 				3D4BD1A423B5F1CE0048F46C /* UIButton+FuncChains.h */,
 				3D4BD1A623B5F1CE0048F46C /* UIButton+FuncChains.m */,
 				3D4BD1A723B5F1CE0048F46C /* UILabel+FuncChains.h */,
 				3D4BD1A523B5F1CE0048F46C /* UILabel+FuncChains.m */,
 				3D4BD1A223B5F1CE0048F46C /* UITextField+FuncChains.h */,
 				3D4BD1A323B5F1CE0048F46C /* UITextField+FuncChains.m */,
+				0456A5422513411F009B6C73 /* UIImageView+FuncChains.h */,
+				0456A5432513411F009B6C73 /* UIImageView+FuncChains.m */,
+				0456A545251349A4009B6C73 /* UIView+FuncChains.h */,
+				0456A546251349A4009B6C73 /* UIView+FuncChains.m */,
 			);
 			path = FuncChains;
 			sourceTree = "<group>";
@@ -171,8 +183,10 @@
 			files = (
 				3D4BD18723B5EA1C0048F46C /* ViewController.m in Sources */,
 				3D4BD1A823B5F1CE0048F46C /* UITextField+FuncChains.m in Sources */,
+				0456A547251349A4009B6C73 /* UIView+FuncChains.m in Sources */,
 				3D4BD18123B5EA1C0048F46C /* AppDelegate.m in Sources */,
 				3D4BD19223B5EA1D0048F46C /* main.m in Sources */,
+				0456A5442513411F009B6C73 /* UIImageView+FuncChains.m in Sources */,
 				3D4BD1A923B5F1CE0048F46C /* UILabel+FuncChains.m in Sources */,
 				3D4BD18423B5EA1C0048F46C /* SceneDelegate.m in Sources */,
 				3D4BD1AA23B5F1CE0048F46C /* UIButton+FuncChains.m in Sources */,
