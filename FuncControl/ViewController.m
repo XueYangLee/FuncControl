@@ -31,6 +31,14 @@
     textField.tag=10;
     [self.view addSubview:textField];
     
+    
+    UIImageView *image=[UIImageView new].func_frame(CGRectMake(15, 350, 100, 100)).func_backgroundColor(UIColor.greenColor).func_image([UIImage imageNamed:@""]).func_contentMode(UIViewContentModeScaleAspectFill).func_addTapGestureTarget_action(self,@selector(imageClick));
+    [self.view addSubview:image];
+    
+    
+    UIView *view=[UIView new].func_frame(CGRectMake(150, 350, 100, 100)).func_backgroundImage([UIImage imageNamed:@"testImage"]);
+    [self.view addSubview:view];
+    
 }
 
 - (void)buttonClick{
@@ -40,6 +48,10 @@
 - (void)textFieldChange{
     UITextField *textField=[self.view viewWithTag:10];
     NSLog(@"%@->textFieldChange",textField.text);
+}
+
+- (void)imageClick{
+    NSLog(@"imageClick");
 }
 
 

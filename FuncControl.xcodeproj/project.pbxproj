@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0456A5442513411F009B6C73 /* UIImageView+FuncChains.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456A5432513411F009B6C73 /* UIImageView+FuncChains.m */; };
 		0456A547251349A4009B6C73 /* UIView+FuncChains.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456A546251349A4009B6C73 /* UIView+FuncChains.m */; };
+		0456A54A251351E0009B6C73 /* testImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0456A549251351E0009B6C73 /* testImage.png */; };
 		3D4BD18123B5EA1C0048F46C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BD18023B5EA1C0048F46C /* AppDelegate.m */; };
 		3D4BD18423B5EA1C0048F46C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BD18323B5EA1C0048F46C /* SceneDelegate.m */; };
 		3D4BD18723B5EA1C0048F46C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BD18623B5EA1C0048F46C /* ViewController.m */; };
@@ -27,6 +28,7 @@
 		0456A545251349A4009B6C73 /* UIView+FuncChains.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+FuncChains.h"; sourceTree = "<group>"; };
 		0456A546251349A4009B6C73 /* UIView+FuncChains.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+FuncChains.m"; sourceTree = "<group>"; };
 		0456A54825134D37009B6C73 /* FuncChains.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FuncChains.h; sourceTree = "<group>"; };
+		0456A549251351E0009B6C73 /* testImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testImage.png; sourceTree = "<group>"; };
 		3D4BD17C23B5EA1C0048F46C /* FuncControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FuncControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D4BD17F23B5EA1C0048F46C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3D4BD18023B5EA1C0048F46C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				3D4BD18323B5EA1C0048F46C /* SceneDelegate.m */,
 				3D4BD18523B5EA1C0048F46C /* ViewController.h */,
 				3D4BD18623B5EA1C0048F46C /* ViewController.m */,
+				0456A549251351E0009B6C73 /* testImage.png */,
 				3D4BD18823B5EA1C0048F46C /* Main.storyboard */,
 				3D4BD18B23B5EA1D0048F46C /* Assets.xcassets */,
 				3D4BD18D23B5EA1D0048F46C /* LaunchScreen.storyboard */,
@@ -171,6 +174,7 @@
 				3D4BD18F23B5EA1D0048F46C /* LaunchScreen.storyboard in Resources */,
 				3D4BD18C23B5EA1D0048F46C /* Assets.xcassets in Resources */,
 				3D4BD18A23B5EA1C0048F46C /* Main.storyboard in Resources */,
+				0456A54A251351E0009B6C73 /* testImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

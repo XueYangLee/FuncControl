@@ -48,6 +48,9 @@ NS_ASSUME_NONNULL_BEGIN
 /** 是否响应用户操作 */
 - (UILabel * (^)(BOOL userInteractionEnabled))func_userInteractionEnabled;
 
+/** 添加轻点手势点击触发对象及点击事件 (target,action) */
+- (UILabel * (^)(id target, SEL action))func_addTapGestureTarget_action;
+
 /** 控件透明度 */
 - (UILabel * (^)(CGFloat alpha))func_alpha;
 

@@ -129,7 +129,7 @@
 }
 
 - (UITextField * _Nonnull (^)(id _Nonnull, SEL _Nonnull, UIControlEvents))func_addTarget_action_events{
-    return ^id(id target,SEL action,UIControlEvents controlEvents){
+    return ^id(id target, SEL action, UIControlEvents controlEvents){
         [self addTarget:target action:action forControlEvents:controlEvents];
         return self;
     };

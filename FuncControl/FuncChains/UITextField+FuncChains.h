@@ -62,7 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (UITextField * (^)(UIKeyboardType keyboardType))func_keyboardType;
 
 /** 操作事件 (target,action,controlEvents) */
-- (UITextField * (^)(id target,SEL action,UIControlEvents controlEvents))func_addTarget_action_events;
+- (UITextField * (^)(id target, SEL action, UIControlEvents controlEvents))func_addTarget_action_events;
 
 /** 输入框能否编辑 */
 - (UITextField * (^)(BOOL enable))func_enable;

@@ -49,6 +49,15 @@
     };
 }
 
+- (UIView * _Nonnull (^)(id _Nonnull, SEL _Nonnull))func_addTapGestureTarget_action{
+    return ^id(id target, SEL action){
+        self.userInteractionEnabled = YES;
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:target action:action];
+        [self addGestureRecognizer:tapGesture];
+        return self;
+    };
+}
+
 - (UIView * _Nonnull (^)(CGFloat))func_alpha{
     return ^id(CGFloat alpha){
         self.alpha = alpha;
