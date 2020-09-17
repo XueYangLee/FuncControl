@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
 
-  spec.name         = "FuncChains"
+  spec.name         = "FuncControl"
   spec.version      = "1.0.0"
   spec.summary      = "基础控件函数式写法，简化代码"
   spec.homepage     = "https://github.com/XueYangLee/FuncControl"
