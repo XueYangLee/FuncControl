@@ -21,6 +21,12 @@ NS_ASSUME_NONNULL_BEGIN
 /** 字体 */
 - (UIButton * (^)(UIFont *font))func_font;
 
+/** 文本对齐方式 */
+- (UIButton * (^)(NSTextAlignment textAlignment))func_textAlignment;
+
+/** 文本行数 */
+- (UIButton * (^)(NSInteger numberOfLines))func_numberOfLines;
+
 /** 文本 UIControlStateNormal下*/
 - (UIButton * (^)(NSString *title))func_title;
 

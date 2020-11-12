@@ -28,6 +28,20 @@
     };
 }
 
+- (UIButton * _Nonnull (^)(NSTextAlignment))func_textAlignment{
+    return ^id(NSTextAlignment textAlignment){
+        self.titleLabel.textAlignment = textAlignment;
+        return self;
+    };
+}
+
+- (UIButton * _Nonnull (^)(NSInteger))func_numberOfLines{
+    return ^id(NSInteger numberOfLines){
+        self.titleLabel.numberOfLines = numberOfLines;
+        return self;
+    };
+}
+
 - (UIButton * _Nonnull (^)(NSString * _Nonnull))func_title{
     return ^id(NSString *title){
         [self setTitle:title forState:UIControlStateNormal];
