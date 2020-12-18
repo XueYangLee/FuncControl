@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** 行数 */
 - (UILabel * (^)(NSInteger numberOfLines))func_numberOfLines;
 
-/** 根据宽度调整font */
+/** 文本是否根据宽度调整Font  宽度自适应 */
 - (UILabel * (^)(BOOL adjustsFontSizeToFitWidth))func_adjustsFontSizeToFitWidth;
 
 /** 背景色 */

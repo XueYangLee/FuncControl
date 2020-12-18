@@ -27,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 /** 文本行数 */
 - (UIButton * (^)(NSInteger numberOfLines))func_numberOfLines;
 
+/** 文本是否根据宽度调整Font  宽度自适应 */
+- (UIButton * (^)(BOOL adjustsFontSizeToFitWidth))func_adjustsFontSizeToFitWidth;
+
 /** 文本 UIControlStateNormal下*/
 - (UIButton * (^)(NSString *title))func_title;
 

@@ -42,6 +42,13 @@
     };
 }
 
+- (UIButton * _Nonnull (^)(BOOL))func_adjustsFontSizeToFitWidth{
+    return ^id(BOOL adjustsFontSizeToFitWidth){
+        self.titleLabel.adjustsFontSizeToFitWidth = adjustsFontSizeToFitWidth;
+        return self;
+    };
+}
+
 - (UIButton * _Nonnull (^)(NSString * _Nonnull))func_title{
     return ^id(NSString *title){
         [self setTitle:title forState:UIControlStateNormal];
