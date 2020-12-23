@@ -45,6 +45,15 @@ NS_ASSUME_NONNULL_BEGIN
 /** 添加轻点手势点击触发对象及点击事件 (target,action) */
 - (UIImageView * (^)(id target, SEL action))func_addTapGestureTarget_action;
 
+/** 垂直渐变色 (startColor,endColor) 必须设置frame,并在frame之后设置,image下使用会全覆盖 */
+- (UIImageView * (^)(UIColor *startColor, UIColor *endColor))func_gradientVerticalColor;
+
+/** 水平渐变色 (startColor,endColor) 必须设置frame,并在frame之后设置,image下使用会全覆盖 */
+- (UIImageView * (^)(UIColor *startColor, UIColor *endColor))func_gradientHorizontalColor;
+
+/** 阴影 (阴影色需包含透明度,阴影半径范围 正常默认值为3) 右下方向阴影 */
+- (UIImageView * (^)(UIColor *shadowColor, CGFloat shadowRadius))func_shadow;
+
 /** 控件透明度 */
 - (UIImageView * (^)(CGFloat alpha))func_alpha;
 

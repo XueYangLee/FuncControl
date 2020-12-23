@@ -24,6 +24,15 @@ NS_ASSUME_NONNULL_BEGIN
 /** 背景图 */
 - (UIView * (^)(UIImage *backgroundImage))func_backgroundImage;
 
+/** 垂直渐变色 (startColor,endColor) 必须设置frame,并在frame之后设置 */
+- (UIView * (^)(UIColor *startColor, UIColor *endColor))func_gradientVerticalColor;
+
+/** 水平渐变色 (startColor,endColor) 必须设置frame,并在frame之后设置 */
+- (UIView * (^)(UIColor *startColor, UIColor *endColor))func_gradientHorizontalColor;
+
+/** 阴影 (阴影色需包含透明度,阴影半径范围 正常默认值为3) 右下方向阴影 */
+- (UIView * (^)(UIColor *shadowColor, CGFloat shadowRadius))func_shadow;
+
 /** 是否裁减掉超出尺寸的部分 */
 - (UIView * (^)(BOOL clipsToBounds))func_clipsToBounds;
 

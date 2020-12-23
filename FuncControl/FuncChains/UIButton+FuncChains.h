@@ -63,6 +63,15 @@ NS_ASSUME_NONNULL_BEGIN
 /** 背景图片 */
 - (UIButton * (^)(UIImage *backgroundImage, UIControlState state))func_backgroundImage;
 
+/** 垂直渐变色 (startColor,endColor) 必须设置frame,并在frame之后,文字属性之前设置方能生效 */
+- (UIButton * (^)(UIColor *startColor, UIColor *endColor))func_gradientVerticalColor;
+
+/** 水平渐变色 (startColor,endColor) 必须设置frame,并在frame之后,文字属性之前设置方能生效 */
+- (UIButton * (^)(UIColor *startColor, UIColor *endColor))func_gradientHorizontalColor;
+
+/** 阴影 (阴影色需包含透明度,阴影半径范围 正常默认值为3) 右下方向阴影 */
+- (UIButton * (^)(UIColor *shadowColor, CGFloat shadowRadius))func_shadow;
+
 /** 按钮点击触发对象及点击事件 (target,action) */
 - (UIButton * (^)(id target, SEL action))func_addTarget_action;
 

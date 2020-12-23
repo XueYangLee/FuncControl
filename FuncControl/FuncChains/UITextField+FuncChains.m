@@ -135,6 +135,16 @@
     };
 }
 
+- (UITextField * _Nonnull (^)(UIColor * _Nonnull, CGFloat))func_shadow{
+    return ^id(UIColor *shadowColor, CGFloat shadowRadius){
+        self.layer.shadowColor = shadowColor.CGColor;
+        self.layer.shadowOffset = CGSizeMake(1,1);
+        self.layer.shadowRadius = shadowRadius;
+        self.layer.shadowOpacity = 1;
+        return self;
+    };
+}
+
 - (UITextField * _Nonnull (^)(BOOL))func_enable{
     return ^id(BOOL enable){
         self.enabled = enable;

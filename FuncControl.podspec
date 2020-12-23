@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "FuncControl"
-  spec.version      = "1.0.1"
+  spec.version      = "1.1.0"
   spec.summary      = "基础控件函数式写法，简化代码"
   spec.homepage     = "https://github.com/XueYangLee/FuncControl"
   spec.license      = "MIT"

@@ -64,6 +64,9 @@ NS_ASSUME_NONNULL_BEGIN
 /** 操作事件 (target,action,controlEvents) */
 - (UITextField * (^)(id target, SEL action, UIControlEvents controlEvents))func_addTarget_action_events;
 
+/** 阴影 (阴影色需包含透明度,阴影半径范围 正常默认值为3) 右下方向阴影 */
+- (UITextField * (^)(UIColor *shadowColor, CGFloat shadowRadius))func_shadow;
+
 /** 输入框能否编辑 */
 - (UITextField * (^)(BOOL enable))func_enable;
 

@@ -28,7 +28,7 @@ UILabel *label = [UILabel new].func_frame(CGRectMake(15, 50, self.view.frame.siz
 
 ##### UIButton
 ```
-UIButton *button = UIButton.func_init.func_frame(CGRectMake(15, 150, self.view.frame.size.width-15, 50)).func_font([UIFont systemFontOfSize:14]).func_titleColor([UIColor blueColor]).func_title(@"UIButton_FuncChains").func_addTarget_action(self,@selector(buttonClick));
+UIButton *button = UIButton.func_init.func_frame(CGRectMake(15, 150, self.view.frame.size.width-15, 50)).func_gradientHorizontalColor(UIColor.redColor,UIColor.blueColor).func_font([UIFont systemFontOfSize:14]).func_titleColor([UIColor whiteColor]).func_title(@"UIButton_FuncChains").func_addTarget_action(self,@selector(buttonClick));
 [self.view addSubview:button];
 ```
 
@@ -47,8 +47,9 @@ UIImageView *image=[UIImageView new].func_frame(CGRectMake(15, 350, 100, 100)).f
 
 ##### UIView
 ```
-UIView *view=[UIView new].func_frame(CGRectMake(150, 350, 100, 100)).func_backgroundImage([UIImage imageNamed:@"testImage"]);
+UIView *view=[UIView new].func_frame(CGRectMake(150, 350, 100, 100)).func_backgroundImage([UIImage imageNamed:@"testImage"]).func_shadow([UIColor.blackColor colorWithAlphaComponent:0.4],5);
 [self.view addSubview:view];
 ```
 
+[iOS 函数式编程理解](https://www.jianshu.com/p/f1f06c5b50d3)
 

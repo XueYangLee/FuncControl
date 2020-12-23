@@ -23,7 +23,7 @@
     [self.view addSubview:label];
     
     
-    UIButton *button = UIButton.func_init.func_frame(CGRectMake(15, 150, self.view.frame.size.width-15, 50)).func_font([UIFont systemFontOfSize:14]).func_titleColor([UIColor blueColor]).func_title(@"UIButton_FuncChains").func_addTarget_action(self,@selector(buttonClick));
+    UIButton *button = UIButton.func_init.func_frame(CGRectMake(15, 150, self.view.frame.size.width-15, 50)).func_gradientHorizontalColor(UIColor.redColor,UIColor.blueColor).func_font([UIFont systemFontOfSize:14]).func_titleColor([UIColor whiteColor]).func_title(@"UIButton_FuncChains").func_addTarget_action(self,@selector(buttonClick));
     [self.view addSubview:button];
     
     
@@ -36,7 +36,7 @@
     [self.view addSubview:image];
     
     
-    UIView *view=[UIView new].func_frame(CGRectMake(150, 350, 100, 100)).func_backgroundImage([UIImage imageNamed:@"testImage"]);
+    UIView *view=[UIView new].func_frame(CGRectMake(150, 350, 100, 100)).func_backgroundImage([UIImage imageNamed:@"testImage"]).func_shadow([UIColor.blackColor colorWithAlphaComponent:0.4],5);
     [self.view addSubview:view];
     
 }
