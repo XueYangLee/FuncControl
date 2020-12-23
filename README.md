@@ -53,3 +53,4 @@ UIView *view=[UIView new].func_frame(CGRectMake(150, 350, 100, 100)).func_backgr
 
 [iOS 函数式编程理解](https://www.jianshu.com/p/f1f06c5b50d3)
 
+![例图](https://github.com/XueYangLee/FuncControl/blob/master/example%402x.png)
