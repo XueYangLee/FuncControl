@@ -4,7 +4,7 @@
 //
 //  Created by Singularity on 2020/9/17.
 //  Copyright © 2020 Singularity. All rights reserved.
-//
+//  https://github.com/XueYangLee/FuncControl
 
 #ifndef FuncChains_h
 #define FuncChains_h
