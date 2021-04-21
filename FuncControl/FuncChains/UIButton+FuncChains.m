@@ -134,7 +134,7 @@
         gradientLayer.startPoint = CGPointMake(0, 0);
         gradientLayer.endPoint = CGPointMake(0, 1);
         gradientLayer.frame = self.bounds;
-        [self.layer addSublayer:gradientLayer];
+        [self.layer insertSublayer:gradientLayer atIndex:0];
         return self;
     };
 }
@@ -147,7 +147,7 @@
         gradientLayer.startPoint = CGPointMake(0, 0);
         gradientLayer.endPoint = CGPointMake(1, 0);
         gradientLayer.frame = self.bounds;
-        [self.layer addSublayer:gradientLayer];
+        [self.layer insertSublayer:gradientLayer atIndex:0];
         return self;
     };
 }
