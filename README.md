@@ -1,6 +1,9 @@
 ## 基础控件UILabel、UIButton、UITextFiel、UIImageView、UIView函数式写法，简化代码
 利用函数式编程方法使基础控件写法简易化，需要的属性向后拼接即可
 
+### FuncControl Swift版本
+[ChainControl](https://github.com/XueYangLee/ChainControl)
+
 #### 导入方式
 + pods导入
 ```
